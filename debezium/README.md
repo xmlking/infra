@@ -2,16 +2,20 @@ debezium-connector-mysql
 ========================
 JBoss CDC tool
 
+
 ### Setup
 
+#### working directory
+*you will be running all commends below from* **infra/debezium** *directory*
+
 ```bash
-cd debezium
+cd infra/debezium
 curl https://repo1.maven.org/maven2/io/debezium/debezium-connector-mysql/0.2.2/debezium-connector-mysql-0.2.2-plugin.tar.gz | tar xz
 ```
 
 ### Run
 ```bash
-cd cdc/debezium
+cd infra/debezium
 export KAFKA_HOME=/Developer/Applications/confluent-3.0.0
 export CLASSPATH=`pwd`/debezium-connector-mysql/*
 $KAFKA_HOME/bin/connect-distributed connect-distributed.properties

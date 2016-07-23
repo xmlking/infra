@@ -5,8 +5,6 @@ A low latency, multi-tenant *Change Data Capture(CDC)* pipeline to continuously 
 
 > This project demonstrate how to build dataflow pipeline to move data from O]operational databases(MySQL, Oracle) to analytics databases(Hadoop, MongoDB, MarkLogic) in real-time using **Change Data Capture(CDC)**, **Kafka** and tools like **Apache NiFi**, **Kafka Streams** or **Spark** to process and ingest data into Hadoop.
 
-![cdc architecture](./presentation/images/cdc-architecture.png)
-
 ### Features
 
 1. Capture changes from many Data Sources and types.
@@ -28,16 +26,20 @@ A low latency, multi-tenant *Change Data Capture(CDC)* pipeline to continuously 
 
 ### Setup
 
+
 #### Install and Run MySQL
 Install source MySQL database and configure it with row based replication as per [instructions](../mysql/).
 
 #### Install and Run Kafka
 Follow the [instructions](../kafka/)
 
+#### working directory
+*you will be running all commends below from* **infra/maxwell** *directory*
+
 #### Install and Run Maxwell
 
 ```bash
-cd cdc/maxwell
+cd infra/maxwell
 curl -L -0 https://github.com/zendesk/maxwell/releases/download/v1.0.0/maxwell-1.0.0.tar.gz | tar --strip-components=1 -zx -C .
 ```
 
