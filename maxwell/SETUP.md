@@ -85,7 +85,6 @@ $KAFKA_HOME/bin/kafka-console-consumer --zookeeper localhost:2181 --topic maxwel
 
 #### Output
 ```
-
 {"database":"test","table":"shop","pk.id":4,"pk.name":"aaa"}
 {"database":"test","table":"shop","type":"insert","ts":1458510224,"xid":33531,"commit":true,"data":{"owner":"bbb","name":"aaa","phone_number":"3331114444","id":4,"version":0}}
 ```
