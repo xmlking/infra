@@ -3,7 +3,7 @@ Maxwell CDC
 A low latency, multi-tenant *Change Data Capture(CDC)* pipeline to continuously replicate data from **OLTP(**MySQL**)** to **OLAP(**NoSQL**)** systems with no impact to the source.
 
 
-> This project demonstrate how to build dataflow pipeline to move data from O]operational databases(MySQL, Oracle) to analytics databases(Hadoop, MongoDB, MarkLogic) in real-time using **Change Data Capture(CDC)**, **Kafka** and tools like **Apache NiFi**, **Kafka Streams** or **Spark** to process and ingest data into Hadoop.
+> This project demonstrate how to build dataflow pipeline to move data from Operational databases(MySQL, Oracle) to analytics databases(Hadoop, MongoDB, MarkLogic) in real-time using **Change Data Capture(CDC)**, **Kafka** and tools like **Apache NiFi**, **Kafka Streams** or **Spark** to process and ingest data into Hadoop.
 
 ### Features
 
