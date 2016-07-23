@@ -72,10 +72,20 @@ mysql> CREATE TABLE test.shop
          phone_number VARCHAR(255) NOT NULL,
          primary key (id, name)
        );
+       
 mysql> INSERT INTO test.shop (version, name, owner, phone_number) values (0, 'aaa', 'bbb', '3331114444');
 Query OK, 1 row affected (0.02 sec)
 
-(maxwell)
+```
+#### Display messages on a topic
+```bash
+export KAFKA_HOME=/Developer/Applications/confluent-3.0.0
+$KAFKA_HOME/bin/kafka-console-consumer --zookeeper localhost:2181 --topic maxwell --from-beginning --property print.key=true
+```
+
+#### Output
+```
+
 {"database":"test","table":"shop","pk.id":4,"pk.name":"aaa"}
 {"database":"test","table":"shop","type":"insert","ts":1458510224,"xid":33531,"commit":true,"data":{"owner":"bbb","name":"aaa","phone_number":"3331114444","id":4,"version":0}}
 ```
