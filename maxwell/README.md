@@ -39,8 +39,8 @@ Follow the [instructions](../kafka/)
 #### Install and Run Maxwell
 
 ```bash
-cd infra/maxwell
-curl -L -0 https://github.com/zendesk/maxwell/releases/download/v1.0.0/maxwell-1.0.0.tar.gz | tar --strip-components=1 -zx -C .
+cd infra/maxwell 
+curl -L -0 https://github.com/zendesk/maxwell/releases/download/v1.1.3/maxwell-1.1.3.tar.gz | tar --strip-components=1 -zx -C .
 ```
 
 ### Run
