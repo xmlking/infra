@@ -1,0 +1,22 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Project ###
+NOTES.md
+deckset
+
+### Intellij ###
+
+*.iml
+
+## Directory-based project format:
+.idea/
+
+## File-based project format:
+*.iws
+
+# IntelliJ
+/out/
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
