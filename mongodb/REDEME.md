@@ -15,5 +15,5 @@ brew install mongodb
 ```bash
 # To start the MongoDB
 cd infra/mongodb
-mongod -f data/mongod.yml
+mongod -f ./mongod.yml
 ```
