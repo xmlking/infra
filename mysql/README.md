@@ -57,6 +57,12 @@ mysql -u root -p
 SHOW DATABASES; # List all existing databases.
 SELECT DISTINCT User FROM mysql.user;  #List all MySQL / MariaDB users.
 SHOW VARIABLES WHERE Variable_Name LIKE "%dir"; #  see Env
+
+# for java app 
+CREATE DATABASE IF NOT EXISTS test;
+GRANT ALL on test.* to 'app'@'%' identified by 'apppwd';
+
+# maintenance   
 DROP DATABASE maxwell;
 DROP TABLE test.shop;
 ```
