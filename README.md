@@ -9,4 +9,5 @@ infrastructure components for my various demo projects.
     1. Zookeeper
     2. kafka
     3. Schema Registry
-4. [Maxwell](./maxwell/SETUP.md)
+3. [Maxwell](./maxwell/SETUP.md)
+4. [MongoDB](./mongodb/)

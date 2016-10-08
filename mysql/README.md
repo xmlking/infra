@@ -14,6 +14,7 @@ mysql -V  # Verify the MySQL installation
 ### Initializing Database (one time)
 ```bash
 unset TMPDIR
+cd infra/mysql
 # mysqld --initialize-insecure --user=`whoami` --basedir="$(brew --prefix mysql)"  --datadir=./data
 mysqld --defaults-file=./my.cnf --initialize-insecure --user=`whoami`
 ```
@@ -62,7 +63,7 @@ SHOW VARIABLES WHERE Variable_Name LIKE "%dir"; #  see Env
 CREATE DATABASE IF NOT EXISTS test;
 GRANT ALL on test.* to 'app'@'%' identified by 'apppwd';
 
-# maintenance   
+# for maintenance only.   
 DROP DATABASE maxwell;
 DROP TABLE test.shop;
 ```
