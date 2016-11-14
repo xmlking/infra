@@ -1,0 +1,24 @@
+{
+  "datacenter": "dc1",
+  "data_dir": "data/server3",
+  "log_level": "INFO",
+  "enable_syslog": false,
+  "node_name": "server3",
+  "server": true,
+  "bootstrap_expect": 3,
+  "ports" : {
+
+    "dns" : -1,
+    "http" : 11500,
+    "rpc" : 11400,
+    "serf_lan" : 11301,
+    "serf_wan" : 11302,
+    "server" : 11300
+  },
+  "retry_join" : [
+    "127.0.0.1:9301",
+    "127.0.0.1:10301",
+    "127.0.0.1:11301"
+  ],
+  "client_addr": "0.0.0.0"
+}

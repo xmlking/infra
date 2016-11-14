@@ -1,0 +1,22 @@
+{
+  "datacenter": "dc1",
+  "data_dir": "data/client",
+  "log_level": "INFO",
+  "node_name": "client1",
+  "server": false,
+  "ports" : {
+
+    "dns" : -1,
+    "http" : 8500,
+    "rpc" : 8400,
+    "serf_lan" : 8301,
+    "serf_wan" : 8302,
+    "server" : 8300
+  },
+
+  "start_join" : [
+    "127.0.0.1:9301",
+    "127.0.0.1:10301",
+    "127.0.0.1:11301"
+  ]
+}
