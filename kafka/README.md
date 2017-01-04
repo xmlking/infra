@@ -13,7 +13,7 @@ curl http://packages.confluent.io/archive/3.1/confluent-oss-3.1.1-2.11.tar.gz | 
 
 ```
 cd infra/kafka
-export KAFKA_HOME=/Developer/Applications/confluent-3.0.1
+export KAFKA_HOME=/Developer/Applications/confluent-3.1.1
 ```
 
 #### To Start Zookeeper
