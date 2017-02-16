@@ -41,7 +41,7 @@ Follow the [instructions](../kafka/)
 
 ```bash
 cd infra/maxwell 
-curl -L -0 https://github.com/zendesk/maxwell/releases/download/v1.1.3/maxwell-1.1.3.tar.gz | tar --strip-components=1 -zx -C .
+curl -L -0 https://github.com/zendesk/maxwell/releases/download/v1.8.0/maxwell-1.8.0.tar.gz | tar --strip-components=1 -zx -C .
 ```
 
 ### Run
@@ -53,7 +53,7 @@ curl -L -0 https://github.com/zendesk/maxwell/releases/download/v1.1.3/maxwell-1
    `bin/maxwell --user='maxwell' --password='XXXXXX' --host='127.0.0.1' --producer=stdout`
 2. Run with kafka producer
 
-   `bin/maxwell`
+   `bin/maxwell --kafka_version=0.10.1`
 
 ### Test
 
@@ -79,8 +79,8 @@ Query OK, 1 row affected (0.02 sec)
 ```
 #### Display messages on a topic
 ```bash
-export KAFKA_HOME=/Developer/Applications/confluent-3.0.0
-$KAFKA_HOME/bin/kafka-console-consumer --zookeeper localhost:2181 --topic maxwell --from-beginning --property print.key=true
+export KAFKA_HOME=/Developer/Applications/confluent-3.1.2
+$KAFKA_HOME/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic maxwell --from-beginning --property print.key=true
 ```
 
 #### Output
