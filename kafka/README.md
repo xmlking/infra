@@ -3,8 +3,8 @@
 ```bash
 # brew install kafka
 cd /Developer/Applications/
-# wget http://packages.confluent.io/archive/3.1/confluent-oss-3.1.1-2.11.tar.gz
-curl http://packages.confluent.io/archive/3.1/confluent-oss-3.1.1-2.11.tar.gz | tar xz
+# wget http://packages.confluent.io/archive/3.1/confluent-oss-3.1.2-2.11.tar.gz
+curl http://packages.confluent.io/archive/3.1/confluent-oss-3.1.2-2.11.tar.gz | tar xz
 ```
 
 #### Starting Kafka Services
@@ -13,7 +13,7 @@ curl http://packages.confluent.io/archive/3.1/confluent-oss-3.1.1-2.11.tar.gz | 
 
 ```
 cd infra/kafka
-export KAFKA_HOME=/Developer/Applications/confluent-3.1.1
+export KAFKA_HOME=/Developer/Applications/confluent-3.1.2
 ```
 
 #### To Start Zookeeper
