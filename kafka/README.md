@@ -43,11 +43,11 @@ $KAFKA_HOME/bin/kafka-topics --list --zookeeper localhost:2181
 
 #### Display messages on a topic
 ```bash
-$KAFKA_HOME/bin/kafka-console-consumer --zookeeper localhost:2181 --topic maxwell --from-beginning --property print.key=true
+$KAFKA_HOME/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic maxwell --from-beginning --property print.key=true
 # for kafka-maxwell-connector
-$KAFKA_HOME/bin/kafka-console-consumer --zookeeper localhost:2181 --topic maxwell.test.shop --from-beginning --property print.key=true
+$KAFKA_HOME/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic maxwell.test.shop --from-beginning --property print.key=true
 # Show Avro data in JSON format in the console.
-$KAFKA_HOME/bin/kafka-avro-console-consumer --zookeeper localhost:2181 --topic maxwell.test.shop --property print.key=true --property schema.registry.url=http://localhost:8081
+$KAFKA_HOME/bin/kafka-avro-console-consumer -bootstrap-server localhost:9092 --topic maxwell.test.shop --property print.key=true --property schema.registry.url=http://localhost:8081
 ```
 
 
